@@ -1,51 +1,92 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Portfolio Example</title>
-        <style>
-            body {
-                margin: 0;
-                padding: 5rem 4rem;
-            }
-    
-            h1, h2 {
-                font-family: 'Goudy Old Style', 'Times New Roman', serif;
-                display: inline;
-            }
-    
-            h1 {
-                font-family: 'Times New Roman';
-                font-size: 16rem;
-                border: solid black 1rem;
-                padding: 0rem 2rem;
-            }
-    
-            h2 {
-                font-size: 12rem;
-            }
-    
-            h3 {
-                font-size: 15rem;
-                position: relative;
-                bottom: 27rem;
-                left: 5rem;
-            }
-        </style>
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="src/css/styles.css">
     </head>
 
     <body>
         <header>
+            <h1>My Portfolio</h1>
             <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
             </nav>
         </header>
 
         <main>
-            <h1>T</h1>
-            <h2>he</h2>
-            <h3>~~~</h3>
+            <section>
+                <div id="profile">
+                    <div id="picture">
+                        <img src="/assets/images/hackers.png" alt="hackers movie (1995)" height="350px" width="350px">
+                        <figcaption>juanmcol</figcaption>
+                    </div>
+                    <div id="quote-box">
+                        <p id="quote">The true creator is necessity, who is the mother of our invention.</p>
+                        <p id="quote-author">- Plato</p>
+                    </div>
+                </div>
+
+                <div id="featured">
+                    <h2>Featured Project</h2>
+                    <section>
+                        <div id="left">
+                            <img src="/assets/images/hackers.png" alt="featured image" height="450" width="800">
+                            <h3>Project Title</h3>
+                            <p>This project is the current featured project. Insert summary here.</p>
+                        </div>
+                        <table>
+                            <thead>
+                                <tr><th>Details</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="left">Created</td>
+                                    <td class="right">October 10, 2025 10:10 AM</td>
+                                </tr>
+                                <tr>
+                                    <td class="left">Platform</td>
+                                    <td class="right"><ul>
+                                        <li>Windows</li>
+                                        <li>Mac OS</li>
+                                        <li>Linux</li>
+                                    </ul></td>
+                                </tr>
+                                <tr>
+                                    <td class="left">Tools Used</td>
+                                    <td class="right"><ul>
+                                        <li>JavaScript</li>
+                                        <li>Python</li>
+                                        <li>C++</li>
+                                    </ul></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td id="download"><a href="#">Download</a></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                </div>
+            </section>
+
+            <div id="latest">
+                <h2>Latest Projects</h2>
+                <div class="project">
+                    <img src="/assets/images/hackers.png" alt="" width="800" height="450">
+                    <h3>Project Title</h3>
+                    <p>This is my most recent project (WIP). Insert summary here.</p>
+                    <a href="#">Click for more info</a>
+                </div>
+            </div>
         </main>
         
         <footer>
+            <span>copyright [remove placeholder images first]</span>
         </footer>
     </body>
 </html>

@@ -1,14 +1,15 @@
 # Personal Portfolio
 
 ## Project Details
-2nd Commit!  
+3rd Commit!  
 
-Made a wireframe for the website and dropped it in the specs folder. Probably a bit more detail than necessary, but I wanted to mess around with Figma and learn how to use it. Pretty neat.  
+Made the home and contact pages. Used css to style it. Next is adding JS.
 
-## Wireframe
-The overall design is subject to change. I definitely want a featured section. "And this is where I'd put my best project. If I had one!"
+I want to make the quote change randomly, and also have "scroll for more" instead of "latest projects", until the user scrolls down.
 
-![wireframe design](/assets/specs/wireframe.png)
+Image used is from Hackers (1995).
 
 ## Current Preview
 ![website preview](/assets/preview.png)
+### Bottom Part
+![website preview 2](/assets/preview02.png)
