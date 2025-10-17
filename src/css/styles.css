@@ -79,10 +79,10 @@ section {
             font-style: italic;
         }
 
-        #quote-author {
+        #hyphen {
             margin-top: 2rem;
             position: relative;
-            left: 25%;
+            float: right;
         }
     }
 }
@@ -140,31 +140,47 @@ section {
 
 #latest {
     background-color: #104030;
-    padding: 3rem 0;
+    padding: 2rem 0 3rem 0;
 
     h2 {
         text-align: center;
-        margin-bottom: 3rem;
+    }
+
+    #arrow-div {
+        display: flex;
+        justify-content: center;
+        margin-top: 0.5rem;
+    }
+    
+    .arrow {
+        width: 0;
+        border-left: 25px solid transparent;
+        border-right: 25px solid transparent;
+        border-top: 30px solid white;
+
+        animation: 0.75s linear 0s infinite alternate point-down;
+    }
+    
+    .project {
+        text-align: center;
+        margin-top: 3rem;
+    
+        h3, p, a {
+            margin: 0.5rem 0;
+        }
     }
 }
 
-.arrow {
-    width: 0;
-    height: 0;
-	border-left: 25px solid transparent;
-	border-right: 25px solid transparent;
-	border-top: 30px solid white;
-    display: inline-block;
-}
-
-
-.project {
-    text-align: center;
-
-    h3, p, a {
-        margin: 0.5rem 0;
+/* animation for .arrow below "scroll for more" */
+@keyframes point-down {
+    from {
+        transform: translate(0);
+    }
+    to {
+        transform: translateY(2vh);
     }
 }
+
 
 footer {
     padding: 0.5rem;
