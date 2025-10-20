@@ -3,6 +3,7 @@
     <head>
         <title>Portfolio</title>
         <link rel="stylesheet" href="src/css/styles.css">
+        
     </head>
 
     <body>
@@ -26,7 +27,7 @@
                     </div>
                     <div id="quote-box">
                         <p id="quote">The true creator is necessity, who is the mother of our invention.</p>
-                        <p id="quote-author">- Plato</p>
+                        <p id="hyphen">- <span id="quote-author">Plato</span></p>
                     </div>
                 </div>
 
@@ -75,7 +76,8 @@
             </section>
 
             <div id="latest">
-                <h2>Latest Projects</h2>
+                <h2 id="latest-header">Latest Projects</h2>
+                <div id="arrow-div"><i class="arrow"></i></div>
                 <div class="project">
                     <img src="/assets/images/hackers.png" alt="" width="800" height="450">
                     <h3>Project Title</h3>
@@ -88,5 +90,7 @@
         <footer>
             <span>copyright [remove placeholder images first]</span>
         </footer>
+
+        <script src="/src/js/main.js"></script>
     </body>
 </html>

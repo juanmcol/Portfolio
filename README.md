@@ -1,15 +1,22 @@
 # Personal Portfolio
 
 ## Project Details
-3rd Commit!  
+4th Commit!  
 
-Made the home and contact pages. Used css to style it. Next is adding JS.
-
-I want to make the quote change randomly, and also have "scroll for more" instead of "latest projects", until the user scrolls down.
+Added some JS to change the quote randomly. Currently only 2 quotes in my array. Changes the quote and the author for every 10-second invertvals. Used keyframes in CSS to make the arrow icon move. Below are some preview videos for these changes.
 
 Image used is from Hackers (1995).
 
 ## Current Preview
-![website preview](/assets/preview.png)
-### Bottom Part
-![website preview 2](/assets/preview02.png)
+### Screenshot
+![preview](assets/preview.png)
+
+### Quote Change
+<video width="1280" height="720" controls>
+    <source src="assets/videos/portfolio-preview-quote-change.mp4" type="video/mp4">
+</video>
+
+### Scroll for More Change
+<video width="1280" height="720" controls>
+    <source src="assets/videos/portfolio-preview-scroll-for-more.mp4" type="video/mp4">
+</video>
