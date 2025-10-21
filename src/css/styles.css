@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* border: solid white 1px; */
 }
 
 body {
@@ -17,42 +18,40 @@ a {
 
 header {
     background-color: #104030;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 
     h1 {
-        width: 30%;
         align-self: center;
         margin-left: 1rem;
     }
-}
 
-nav {
-    width: 100%;
-
-    ul {
-        display: flex;
-        justify-content: end;
-    }
-
-    li {
-        list-style: none;
-        margin: 1rem;
+    nav {   
+        ul {
+            display: flex;
+            justify-content: end;
+        }
+    
+        li {
+            list-style: none;
+            margin: 1rem;
+        }
     }
 }
 
-section {
-    display: inline-flex;
-    width: 100%;
-    padding: 2rem 0;
+#top {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
 }
 
 #profile {
+    grid-area: 1/1/6/7;
     display: grid;
-    width: 50%;
-    height: 100%;
-    padding: 4rem 0;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 3.8642rem);
 
     #picture {
+        grid-area: 3/1/8/13;
         justify-self: center;
         justify-items: center;
 
@@ -67,20 +66,20 @@ section {
     }
 
     #quote-box {
-        width: 40%;
-        height: 50%;
-        margin-top: 2rem;
+        grid-area: 8/1/13/13;
         font-size: 1.25rem;
         justify-self: center;
         justify-items: center;
         text-align: center;
+        width: 40%;
+        margin-top: 6rem;
 
         #quote {
+            margin: 1.5rem 0;
             font-style: italic;
         }
 
         #hyphen {
-            margin-top: 2rem;
             position: relative;
             float: right;
         }
@@ -88,30 +87,37 @@ section {
 }
 
 #featured {
-    padding: 1rem 0 4rem 0;
-    width: 50%;
+    grid-area: 1/7/6/13;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 3.8642rem);
 
     h2 {
+        grid-area: 1/1/1/13;
         text-align: center;
-        padding-bottom: 1rem;
+        align-self: center;
+        margin-top: 3rem;
     }
 
     #left {
-        width: 75%;
+        grid-area: 3/1/3/9;
         img {
             width: 100%;
             height: auto;
         }
 
-        h3, p {
-            margin: 0.5rem 0;
+        h3 {
+            padding: 0.5rem 0;
+        }
+
+        p {
+            margin-bottom: 0.5rem;
         }
     }
 
     table {
-        display: grid;
+        grid-area: 3/9/3/13;
         padding: 2rem;
-        width: 35%;
         
         thead {
             justify-self: center;
@@ -140,20 +146,24 @@ section {
 
 #latest {
     background-color: #104030;
-    padding: 2rem 0 3rem 0;
+    padding: 3.3rem 0;
 
-    h2 {
+    #latest-h2 {
+        width: 100%;
         text-align: center;
     }
 
+    #latest-span {
+        width: 100%;
+    }
+
     #arrow-div {
+        width: 100%;
         display: flex;
         justify-content: center;
-        margin-top: 0.5rem;
     }
     
     .arrow {
-        width: 0;
         border-left: 25px solid transparent;
         border-right: 25px solid transparent;
         border-top: 30px solid white;
@@ -163,7 +173,7 @@ section {
     
     .project {
         text-align: center;
-        margin-top: 3rem;
+        padding-top: 3rem;
     
         h3, p, a {
             margin: 0.5rem 0;

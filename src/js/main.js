@@ -22,11 +22,10 @@ const getQuote = function() {
 setInterval(getQuote, 10000);
 
 // change "scroll for more" to "Latest Projects", and hide the arrow
-let latest = document.getElementById("latest-header");
+let latest = document.getElementById("latest-span");
 latest.innerHTML = "scroll down for more";
 
 document.addEventListener("scroll", function (e) {
     latest.innerHTML = "Latest Projects";
-    document.getElementById("latest").style.padding = "3rem 0";
     document.getElementById("arrow-div").style.display = "none";
 })
