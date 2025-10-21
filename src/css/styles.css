@@ -149,16 +149,10 @@ header {
     padding: 3.3rem 0;
 
     #latest-h2 {
-        width: 100%;
         text-align: center;
     }
 
-    #latest-span {
-        width: 100%;
-    }
-
     #arrow-div {
-        width: 100%;
         display: flex;
         justify-content: center;
     }
