@@ -1,7 +1,8 @@
 // quote array [quote, author]
 const quotes = [
     ["The true creator is necessity, who is the mother of our invention.", "Plato"],
-    ["Ack Ack", "Martian, Mars Attacks!"]
+    ["Ack Ack.", "Martian, Mars Attacks!"],
+    ["Failure is success in progress.", "Albert Einstein"]
 ];
 
 // change quote randomly
