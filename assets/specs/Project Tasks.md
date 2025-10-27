@@ -1,10 +1,9 @@
 # Project Tasks
 
 ## In Progress
-9. Make it responsive
+10. Publish to the web
 
 ## To Do
-10. Publish to the web
 11. Next Steps
 
 ## Done
@@ -16,3 +15,4 @@
 6. Build the Contact Page
 7. Style the content
 8. Make it interactive
+9. Make it responsive
