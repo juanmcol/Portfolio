@@ -271,6 +271,12 @@ footer {
     footer {
         background-color: #104030;
     }
+
+    .contact {
+        table {
+            width: 50%;
+        }
+    }
 }
 
 @media only screen and (max-width: 50rem) {
@@ -296,7 +302,7 @@ footer {
         grid-area: 1/1/1/13;
 
         #quote-box {
-            width: min(22rem);
+            width: 90%;
         }
     }
     
@@ -330,5 +336,11 @@ footer {
 
     footer {
         background-color: #104030;
+    }
+
+    .contact {
+        table {
+            width: 100%;
+        }
     }
 }
